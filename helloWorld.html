@@ -9,12 +9,16 @@
   <body>
     <div ng-controller="appCtrl">
       <p text-align="center"><b>{{greeting.text}}</b></p>
+      <p text-align="center"><b>{{greeting.name}}</b></p>
+
+
     </div>
     <script>
     var appname = angular.module('appname', []);
 appname.controller('appCtrl', ['$scope',
   function($scope) {
     $scope.greeting = { text: 'Hello World' };
+    $scope.greeting = {name: 'Akshara'};
 }]);
 </script>
   </body>
